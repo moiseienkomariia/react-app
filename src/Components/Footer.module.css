@@ -1,0 +1,5 @@
+.footer{
+    grid-area: f;
+    background: #F58066;
+    border-top: var(--border-top);
+}

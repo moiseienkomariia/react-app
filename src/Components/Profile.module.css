@@ -1,0 +1,12 @@
+.content{
+    grid-area: c;
+}
+.content img{
+    width: 100%;
+}
+.content .user .user_img{
+    max-width: 70px;
+}
+.content .posts .item{
+    color: green;
+}

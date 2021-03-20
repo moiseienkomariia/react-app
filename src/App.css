@@ -1,0 +1,20 @@
+:root{
+  --border-top: 15px solid #be513b;
+}
+ul{
+  list-style: none;
+}
+.app_wrapper{
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  grid-template-areas:
+  "h h"
+  "n c"
+  "f f";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+}
+
