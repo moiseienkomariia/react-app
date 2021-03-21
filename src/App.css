@@ -4,7 +4,7 @@
 ul{
   list-style: none;
 }
-.app_wrapper{
+.app-wrapper{
   display: grid;
   max-width: 1200px;
   margin: 0 auto;
@@ -17,4 +17,9 @@ ul{
   grid-template-columns: 2fr 10fr;
   grid-gap: 10px;
 }
-
+.app-wrapper-content{
+  grid-area: c;
+}
+.app-wrapper-content img{
+  width: 100%;
+}
