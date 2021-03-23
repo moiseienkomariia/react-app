@@ -7,7 +7,7 @@ const Profile = () => {
         <div>
             <img src="header.jpg" alt=""/>
             <div className={p.user}>
-                <img className={p.userImg} src="user.jpg" alt=""/>
+                <img className={p.user_img} src="user.jpg" alt=""/>
             </div>
             <div>
                 <MyPosts/>

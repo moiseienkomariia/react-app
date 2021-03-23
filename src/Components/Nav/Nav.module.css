@@ -1,3 +1,6 @@
+ul{
+    margin: 0;
+}
 .nav{
     grid-area: n;
     background: #F58066;
@@ -5,7 +8,14 @@
 }
 .item{
     color: #fff;
+    text-decoration: none;
+    padding: 5px 0;
+    border-bottom: 1px solid #be513b;
+    display: block;
 }
-.item.active{
-    color: blue;
+.active{
+    font-weight: bold;
+}
+.item:hover{
+    text-decoration: underline;
 }
