@@ -3,18 +3,24 @@
     grid-template-columns: 2fr 10fr;
 }
 .dialogs_items{
-
+    border-right: 1px solid #85DAFF;
 }
 .item{
     padding: 5px 0;
-    border-bottom: 1px solid #85DAFF;
+    /*border-bottom: 1px solid #85DAFF;*/
     display: block;
+    color: #be513b;
+    text-decoration: none;
+    transition: 0.2s text-decoration ease;
+}
+.item:hover{
+    text-decoration: underline;
 }
 .active{
     font-weight: bold;
 }
 .messages{
-
+    padding: 5px 10px;
 }
 .message{
 
