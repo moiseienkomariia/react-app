@@ -3,10 +3,14 @@ import posts from './MyPosts.module.css';
 import Post from "./Post/Post";
 
 const MyPosts = () => {
-    let postsData = [
+    let posts = [
         {id: 1, message: "Hello", likesCount: 12},
-        {id: 1, message: "Hi. How are you?", likesCount: 15}
-    ]
+        {id: 2, message: "Hi. How are you?", likesCount: 15},
+        {id: 3, message: "Hi.", likesCount: 13},
+        {id: 4, message: "Hi, Denis", likesCount: 16},
+        {id: 5, message: "Goodbye.", likesCount: 1}
+    ];
+    let postsElements = posts.map( p => <Post message={p.message} likesCount={p.likesCount}/>);
     return(
         <div>
             <section className={posts.posts_list}>
@@ -14,8 +18,7 @@ const MyPosts = () => {
                 <textarea name="" id="" cols="30" rows="10"></textarea><br/>
                 <button type="button">Add post</button>
                 <div>
-                    <Post message={postsData[0].message} likesCount={postsData[0].likesCount}/>
-                    <Post message={postsData[1].message} likesCount={postsData[1].likesCount}/>
+                    { postsElements }
                 </div>
             </section>
         </div>
